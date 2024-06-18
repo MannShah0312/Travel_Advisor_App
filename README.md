@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Travel Advisor App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a Travel Advisor application built using React. It utilizes the Google Maps API for location services and the Travel Advisor API from RapidAPI for retrieving information about places.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Map View**: Displays a map using Google Maps API where users can explore different locations.
+- **Places Search**: Allows users to search for places like restaurants, hotels, attractions, etc.
+- **Weather Information**: Provides weather data for the current location.
+- **Filtering**: Users can filter places based on their ratings.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Material-UI
+- Google Maps API
+- Travel Advisor API from RapidAPI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup Instructions
 
-### `npm test`
+To run this project locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+```
+git clone <repository-url>
+cd travel-advisor-app
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+3. Set up environment variables:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create a `.env` file in the root of the project and add the following:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+REACT_APP_GOOGLE_MAPS_API_KEY=<your-google-maps-api-key>
+REACT_APP_TRAVEL_ADVISOR_API_KEY=<your-rapidapi-key>
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Replace `<your-google-maps-api-key>` with your actual Google Maps API key and `<your-rapidapi-key>` with your RapidAPI key for the Travel Advisor API.
 
-## Learn More
+4. Run the app:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+This will start the development server and open the app in your default browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## App Structure
 
-### Analyzing the Bundle Size
+- **`App.js`**: Main component that integrates all features including maps, places list, and weather data.
+- **`components/Header/Header.js`**: Header component with search and autocomplete functionality.
+- **`components/List/List.js`**: Component to display a list of places with filtering options.
+- **`components/Map/Map.js`**: Component to display the map with markers and weather information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Future Improvements
 
-### Making a Progressive Web App
+- Implement user authentication and save favorite places.
+- Enhance UI/UX with more interactive features.
+- Optimize performance by caching API responses and minimizing re-renders.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! If you have any suggestions, enhancements, or bug fixes, feel free to submit a pull request.
