@@ -9,6 +9,15 @@ This project is a Travel Advisor application built using React. It utilizes the 
 - **Weather Information**: Provides weather data for the current location.
 - **Filtering**: Users can filter places based on their ratings.
 
+Restaurants:
+![Screenshot (260)](https://github.com/MannShah0312/Travel_Advisor_App/assets/134050095/9e5a0ed5-d7e3-4baa-8799-9dfd61179489)
+
+Hotels:
+![Screenshot (262)](https://github.com/MannShah0312/Travel_Advisor_App/assets/134050095/d8d58632-2512-4abe-ab88-507eaccf5dad)
+
+Tourist Attractions:
+![Screenshot (265)](https://github.com/MannShah0312/Travel_Advisor_App/assets/134050095/c56c6d88-0b9f-4e6f-ab04-dfc079692c36)
+
 ## Technologies Used
 
 - React
